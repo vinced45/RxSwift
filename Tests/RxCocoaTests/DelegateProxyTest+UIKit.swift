@@ -93,11 +93,13 @@ extension DelegateProxyTest {
 #endif
 
 #if os(iOS)
+/*
 extension DelegateProxyTest {
     func test_UIWebViewDelegateExtension() {
         performDelegateTest(UIWebViewSubclass(frame: CGRect.zero)) { ExtendWebViewDelegateProxy(webViewSubclass: $0) }
     }
 }
+ */
 #endif
 
 extension DelegateProxyTest {
@@ -458,7 +460,7 @@ final class UIPickerViewSubclass2: UIPickerView, TestDelegateControl {
         return RxPickerViewDataSourceProxy.installForwardDelegate(testDelegate, retainDelegate: false, onProxyForObject: self)
     }
 }
-
+/*
 final class ExtendWebViewDelegateProxy
     : RxWebViewDelegateProxy
     , TestDelegateProtocol {
@@ -466,7 +468,8 @@ final class ExtendWebViewDelegateProxy
         super.init(webView: webViewSubclass)
     }
 }
-
+*/
+/*
 final class UIWebViewSubclass: UIWebView, TestDelegateControl {
     func doThatTest(_ value: Int) {
         (delegate as! TestDelegateProtocol).testEventHappened?(value)
@@ -483,7 +486,7 @@ final class UIWebViewSubclass: UIWebView, TestDelegateControl {
     }
     
 }
-
+*/
 #endif
 
 

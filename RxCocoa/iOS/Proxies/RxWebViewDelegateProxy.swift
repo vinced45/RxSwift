@@ -10,7 +10,7 @@
 
 import UIKit
 import RxSwift
-
+/*
 extension UIWebView: HasDelegate {
     public typealias Delegate = UIWebViewDelegate
 }
@@ -34,5 +34,5 @@ open class RxWebViewDelegateProxy
         self.register { RxWebViewDelegateProxy(webView: $0) }
     }
 }
-
+*/
 #endif
